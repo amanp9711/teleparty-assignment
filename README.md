@@ -1,1 +1,0 @@
-# teleparty-assignment

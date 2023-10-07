@@ -1,0 +1,50 @@
+
+.table-container {
+	margin: 20px;
+}
+
+table {
+	margin-top: 10px;
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+	padding: 12px;
+	text-align: left;
+}
+
+thead {
+	background-color: #333;
+	color: #fff;
+}
+
+th {
+	font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+	background-color: #ddd;
+}
+
+.search-bar {
+	width: 50%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	outline: none;
+}
+
+.search-bar:focus {
+	border-color: #007BFF;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
