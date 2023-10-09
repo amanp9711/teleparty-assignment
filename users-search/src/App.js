@@ -6,18 +6,14 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [errorOccurred, setError] = useState(false);
   const [data, setData] = useState([]);
-  const token = "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"; // add your github personal token to access the users search API
   let delayTimeout = useRef(null);;
   useEffect(() => {
     const getData = () => {
-      const headers = {
-        Authorization: `token ${token}`,
-      };
       if (!searchQuery.trim()) {
         setData([]);
         return;
       }
-      fetch(`https://api.github.com/search/users?q=${searchQuery}&sort=followers&order=desc`, { headers })
+      fetch(`https://api.github.com/search/users?q=${searchQuery}&sort=followers&order=desc`)
         .then((response) => response.json())
         .then((responseData) => {
           console.log(responseData.items);
