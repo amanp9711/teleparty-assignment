@@ -6,7 +6,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [errorOccurred, setError] = useState(false);
   const [data, setData] = useState([]);
-  const token = "GITHUB_PERSONAL_ACCESS_TOKEN"; // add your github personal token to access the users search API
+  const token = "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"; // add your github personal token to access the users search API
   let delayTimeout = useRef(null);;
   useEffect(() => {
     const getData = () => {
